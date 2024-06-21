@@ -80,7 +80,7 @@ class ProfilePage extends StatelessWidget {
   void showProductDetails(BuildContext context, dynamic product) {
     final List<String> images = product['images'].cast<String>();
     if (images.isEmpty) {
-      images.add('https://via.placeholder.com/150'); // Dummy image if no images are available
+      images.add('assets/dummy.png'); // Dummy image if no images are available
     }
 
     showModalBottomSheet(
